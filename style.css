@@ -29,27 +29,32 @@ a {
 .skills {
     text-align: center;
     background-color: rgb(26, 24, 24);
+    font-family: monospace;
 
 }
 
 .list-skill {
     display: inline-block;
     text-align: left;
+    font-family: monospace;
 }
 
 .lang {
     text-align: center;
     background-color: rgb(26, 24, 24);
+    font-family: monospace;
 }
 
 .list-lang {
     display: inline-block;
     text-align: left;
+    font-family: monospace;
 }
 
 .personal-info {
     padding: 15px;
     margin: 20px;
+    background-color: rgba(12, 12, 12, 0.466);
     position: absolute;
     display: inline;
     float: right;

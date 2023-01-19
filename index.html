@@ -3,62 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Meu Portifólio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Luiz Arlochi</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            background-color: rgb(143, 228, 199);
-        }
-        
+        body {
+    background-color: black;
+    padding: 8px;
+}
+
     </style>
 </head>
 
 <body>
+    <h1 id="name">Luiz Guilherme Arlochi Santos</h1>
+    <img id="foto-perfil" src="perfil.jpeg" alt="Foto Luiz" width="300px">
     <div class="personal-info">
-        <h1 id="meuNome"> Luiz Guilherme Arlochi Santos</h1>
-        <img id="foto-perfil" src="perfil.jpeg" alt="Perfil Luiz" width="250px">
-        <div class="nascionalidade-idade">
-            <p id="nacionalidade">Nacional de <strong> Brasil</strong>, nascido em <strong> Jacareí, São Paulo</strong>
-            </p>
-            <p id="idade"><strong> Idade</strong> 29 anos</p>
-        </div>
-
-        <br>
-        <a  id="link-que-gosto" href="https://web.dio.me/home" target="_blank">Página que gosto</a>
+        <h2>Brasileiro, nascido em <em>Jacareí, São Paulo.</em><h2>
+        <h2>29 anos</h2>
+    </div>
 
 
+    <div class="skills">
+        <h1>Habilidades</h1>
+        <ul class="list-skill">
+            <li>Analítico</li>
+            <li><strong><em>em Projetos Ágeis com SCRUM</em></strong></li>
+            <li>Solução de problemas</li>
+        </ul>
+    </div>
 
+    <div class="lang">
+        <h1>Idiomas</h1>
+        <ul class="list-lang">
+            <li> Portugês fluente</li>
+            <li>Inglês intermediário</li>
+        </ul>
+    </div>
 
-        <ul>
-            <h2 id="habilidades">Habilidades</h2>
-            <li class="skills"><strong>Analitico</strong></li>
-            <li class="skills"><strong><em>Certificado em Projetos Ágeis com SCRUM</em></strong></li>
-            <li class="skills">Resiliente</li>
-            <li class="skills">Disciplinado</li>
-            <li class="skills">Empenhado em solucionar problemas</li>
-            <ul>
-                <ul>
-                    <h2 id="idiomas">Idiomas</h2>
-                    <li class="lang">Português fluente</li>
-                    <li class="lang"><em>Ingles intermediário</em></li>
-                </ul>
-                
-                <div><a href="#foto">Minha foto</a>
-                </div>
-                
-                <div>
-                    <ol class="indice">
-                        <h3>Indice</h3>
-                        <li><a href="#meuNome">Nome</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#idiomas">Idiomas</a></li>
-                        <li><a href="#nacionalidade">Nacionalidade</a></li>
-                        <li><a href="#idade">Idade</a></li>
-    
-                    </ol>
-                </div>
-
-
+    <div class="indice">
+        <h3 id="idc">Indice</h3>
+        <ol>
+            <li><a href="#name">Nome</a></li>
+            <li><a href="#foto-perfil">Foto</a></li>
+            <li><a href="#list-skill">Habilidades</a></li>
+            <li><a href="list-lang">Idiomas</a></li>
+        </ol>
+    </div>
+    <a href="https://www.w3schools.com/" target="_blank">Pagina que gosto</a>
 </body>
 
 </html>

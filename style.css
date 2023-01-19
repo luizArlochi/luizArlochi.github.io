@@ -1,58 +1,60 @@
 <style>
+body {
+    background-color: black;
+    padding: 8px;
+}
 
-#link-que-gosto{
-   display: inline;
-   padding: 10px;
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    color: white;
+}
 
- }
+a {
+    color: rgb(11, 48, 255);
+}
+
+#name {
+    text-align: center;
+}
+
+#foto-perfil {
+    padding: 2px;
+    background-color: white;
+}
+
 .skills {
     text-align: center;
-    background-color: grey;
-    font-size: 20px;
+    background-color: rgb(26, 24, 24);
+
 }
 
-#habilidades {
-    display: block;
-    text-align: center;
-    font-size: 2em;
-}
-
-#idiomas {
-    text-align: center;
-    font-size: 2em;
+.list-skill {
+    display: inline-block;
+    text-align: left;
 }
 
 .lang {
     text-align: center;
-    background-color: rgb(99, 243, 99);
-    font-size: 20px;
+    background-color: rgb(26, 24, 24);
 }
 
-#foto-perfil {
-    padding: 50px;
-    background-color: grey;
+.list-lang {
+    display: inline-block;
+    text-align: left;
 }
 
-#meuNome {
-    text-align: center;
-}
-
-#nacionalidade {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#idade {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.personal-info .nascionalidade-idade {
-    background-color: grey;
+.personal-info {
     padding: 15px;
     margin: 20px;
     position: absolute;
     display: inline;
     float: right;
     left: 400px;
-    top: 280px;
+    top: 250px;
 }
+
 </style>

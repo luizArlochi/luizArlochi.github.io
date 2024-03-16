@@ -19,7 +19,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/sandro-katalina-k1bO_VTiZSs-unsplash.jpg')",
+        "hero-pattern": "url('/src/assets/nasa-Q1p7bh3SHj8-unsplash.jpg')",
       },
     },
   },

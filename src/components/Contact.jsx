@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { validateForm } from '../utils/validateForm';
+import { displayErrorAlert } from '../utils/errorHandle';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -16,9 +18,65 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
 
-  const handleSubmit = (e) => {};
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate form fields
+    const { name, email, message } = form;
+    const errors = validateForm(name, email, message);
+
+    // Display error messages if any field is invalid
+    if (Object.keys(errors).length > 0) {
+      displayErrorAlert('Please fill in all required fields.');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      // Send email
+      const response = await emailjs.send(
+        'service_vbnlzuf', // Service ID
+        'template_5fzuqmh', // Template ID
+        {
+          from_name: form.name,
+          reply_to: form.email,
+          message: form.message,
+        },
+        'Mvvu5zxrkvoIVhXS1' // User ID from emailJS
+      );
+
+      console.log('Email successfully sent!', response);
+
+      // Reset form fields
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+
+      setLoading(false);
+
+      // Show success message to the user
+      alert('Thank you! Your message has been sent successfully.');
+    } catch (error) {
+      console.error('Failed to send email', error);
+      setLoading(false);
+
+      // Display error message to the user
+      displayErrorAlert('Oops! Failed to send email. Please try again later.');
+    }
+  };
 
 
   return (
@@ -26,7 +84,8 @@ const Contact = () => {
       xl:mt-12
       xl:flex-row
       flex-col-reverse
-      flex gap-10
+      flex
+      gap-5
       overflow-hidden
       "
     >
@@ -48,6 +107,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
               Your Name
+              <span className="text-red-500">*</span>
             </span>
             <input
               type="text"
@@ -65,11 +125,13 @@ const Contact = () => {
                 border-none
                 font-medium
                 "
+                required
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
               Your Email
+              <span className="text-red-500">*</span>
             </span>
             <input
               type="email"
@@ -87,11 +149,13 @@ const Contact = () => {
                 border-none
                 font-medium
                 "
+                required
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
               Your Message
+              <span className="text-red-500">*</span>
             </span>
             <textarea
               rows="7"
@@ -109,6 +173,7 @@ const Contact = () => {
                 border-none
                 font-medium
                 "
+                required
             />
           </label>
 
@@ -127,6 +192,7 @@ const Contact = () => {
               rounded-xl
               hover:shadow-lg
               "
+              onClick={(e)=>handleSubmit(e, form.name, form.email, form.message)}
           >
             {loading ? "Sending..." : "Send"}
 

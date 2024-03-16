@@ -13,7 +13,8 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
+    // figma,
+    mysql,
     docker,
     meta,
     starbucks,
@@ -23,6 +24,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    ai,
+    react,
+    python
   } from "../assets";
   
   export const navLinks = [
@@ -47,27 +51,19 @@ import {
     },
     {
       title: "React Native Developer",
-      icon: mobile,
+      icon: react,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Python Developer",
+      icon: ai,
     },
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
     {
       name: "JavaScript",
       icon: javascript,
@@ -93,6 +89,22 @@ import {
       icon: nodejs,
     },
     {
+      name: "docker",
+      icon: docker,
+    },
+    {
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "mysql",
+      icon: mysql,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
     },
@@ -104,14 +116,10 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
   ];
   
   const experiences = [

@@ -49,7 +49,7 @@ const Hero = () => {
           <h1 className={
             `${styles.heroHeadText}`
           }
-          >Hi, I'm <span className="text-amber-600"> Luiz Guilherme</span>
+          >Hi, I'm <span className="text-violet-600"> Luiz Guilherme</span>
           </h1>
           <p className={
             `${styles.heroSubText}
@@ -57,7 +57,7 @@ const Hero = () => {
             text-white-100
             `
           }>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, dolor itaque aut.
+            Full Stack Web Developer, JavaScript and Python enthusiast. 
           </p>
         </div>
       </div>

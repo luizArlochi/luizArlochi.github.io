@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { logo, menu, close, github, linkedin } from '../assets'
+
+// const handleGitHubLinkClick = () => {
+//   window.open("https://github.com/luizArlochi", "_blank");
+// };
 
 const Navbar = () => {
   const [activate, setActivate] = useState("");
@@ -52,6 +56,26 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
+          <Link
+            to="#"
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActivate("");
+              window.open("https://github.com/luizArlochi", "_blank");
+            }}
+          >
+            <img src={github} alt="github" className="w-9 h-9 object-contain"/>
+          </Link>
+          <Link
+            to="#"
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActivate("");
+              window.open("https://www.linkedin.com/in/luiz-arlochi/", "_blank");
+            }}
+          >
+            <img src={linkedin} alt="linkedin" className="w-9 h-9 object-contain"/>
+          </Link>
         <ul className="
           list-none
           hidden

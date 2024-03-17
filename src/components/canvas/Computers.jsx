@@ -37,10 +37,14 @@ const ComputersCanvas = () => {
      // Render a local image as a placeholder when the device is mobile
      return (
        <div className="w-full h-full flex justify-center items-center">
-        <img src="/src/assets/computer.png" alt="Modelo 3D indisponível" className="max-w-full max-h-full scale-75 translate-y-1/4" />
+        <img
+          src="/public/computer.png"
+          alt="Computer Image"
+          className="max-w-full max-h-full scale-75 translate-y-1/4"
+        />
        </div>
      );
-  }
+  };
   return (
      <Canvas
        frameloop='demand'

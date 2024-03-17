@@ -1,5 +1,5 @@
-import React from 'react'
-import { styles } from '../styles'
+import React from 'react';
+import { styles } from '../styles';
 import { motion } from 'framer-motion';
 import { ComputersCanvas } from './canvas';
 
@@ -19,29 +19,10 @@ const Hero = () => {
         `
         }
       >
-        <div className="
-          flex
-          flex-col
-          justify-center
-          items-center
-          mt-5
-          "
-        >
-          <div className="
-            w-5
-            h-5
-            rounded-full
-            bg-[#915eff]
-            "
-          />
+        <div className="flex flex-col justify-center items-center mt-5 ">
+          <div className="w-5 h-5 rounded-full bg-[#915eff] "/>
 
-          <div className="
-            w-1
-            sm:h80
-            h-40
-            violet-gradient
-            "
-          />
+          <div className="w-1 sm:h80 h-40 violet-gradient "/>
 
 
         </div>
@@ -111,6 +92,6 @@ const Hero = () => {
       </div>
     </section>
   )
-}
+};
 
 export default Hero;

@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { styles } from '../styles'
-import { navLinks } from '../constants'
-import { logo, menu, close, github, linkedin } from '../assets'
-
-// const handleGitHubLinkClick = () => {
-//   window.open("https://github.com/luizArlochi", "_blank");
-// };
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { styles } from '../styles';
+import { navLinks } from '../constants';
+import { logo, menu, close, github, linkedin } from '../assets';
 
 const Navbar = () => {
   const [activate, setActivate] = useState("");
@@ -174,6 +170,6 @@ const Navbar = () => {
       </div>
     </nav>
   )
-}
+};
 
-export default Navbar
+export default Navbar;

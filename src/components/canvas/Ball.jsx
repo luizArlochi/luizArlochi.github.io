@@ -7,6 +7,7 @@ import {
   Preload,
   useTexture
 } from '@react-three/drei'
+import { useDeviceType } from '../../utils/devicesTypes';
 
 import CanvasLoader from '../Loader'
 
@@ -36,6 +37,31 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  const { isMobile } = useDeviceType();
+
+  if (isMobile) {
+    // Render a local image as a placeholder when the device is mobile
+    return (
+      <div className="
+        w-full
+        h-full
+        flex
+        justify-center
+        items-center
+        bg-gradient-to-r
+        from-green-500
+        via-purple-500
+        to-pink-500
+        p-[2px]
+        rounded-[20px]
+        shadow-card
+        rounded-full">
+       <div className="w-full h-full flex justify-center items-center rounded-full bg-indigo-800 overflow-hidden">
+          <img src={icon} alt="Imagem da tecnologia" className="max-w-full max-h-full rounded-full" />
+       </div>
+      </div>
+    );
+ }
   return (
     <Canvas
     frameloop='demand'

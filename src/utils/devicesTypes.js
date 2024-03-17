@@ -43,3 +43,8 @@ export function DevicesTypes() {
   // Galaxy S5 (~360px)
   const is360px = useMediaQuery({ query: '(max-width: 361px)' });
 }
+
+export function useDeviceType() {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  return { isMobile };
+ }

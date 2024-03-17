@@ -75,7 +75,7 @@ const About = () => {
           leading-[30px]
         "
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, saepe error magni molestias sed fuga.
+        Proficient in a wide range of technical skills, including JavaScript, TypeScript, Python, SH/Bash Terminal, Linux, Git, HTML5/CSS, React.js, Docker, Django, Mongo, Flask, MySQL and others. I have a solid grounding in programming logic, responsive web design and testing frameworks such as Jest. Familiarity with agile methodologies, including Scrum, and project management tools such as Trello and jira. Ability to clean-code and use Docker for efficient development. In addition to technical skills, I possess a strong set of interpersonal skills, including cognitive flexibility, ease of learning and problem-solving skills. My critical thinking skills and goal orientation ensure efficient project execution.
       </motion.p>
       <div className="
         mt-20

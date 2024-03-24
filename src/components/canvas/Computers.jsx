@@ -38,7 +38,7 @@ const ComputersCanvas = () => {
      return (
        <div className="w-full h-full flex justify-center items-center">
         <img
-          src="/public/computer.png"
+          src="https://i.imgur.com/GxREEhN.png"
           alt="Computer Image"
           className="max-w-full max-h-full scale-75 translate-y-1/4"
         />

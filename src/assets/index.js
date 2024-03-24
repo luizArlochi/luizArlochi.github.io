@@ -34,6 +34,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import wallet from "./wallet.png";
 
 export {
   logo,
@@ -48,7 +49,7 @@ export {
   close,
   css,
   docker,
-  // figma,
+  wallet,
   mysql,
   git,
   html,

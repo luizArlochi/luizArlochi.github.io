@@ -123,4 +123,5 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "works");
+const WrappedWorks = SectionWrapper(Works, "works");
+export default WrappedWorks;

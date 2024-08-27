@@ -1,7 +1,7 @@
 import React from 'react';
 import { styles } from '../styles';
 import { motion } from 'framer-motion';
-import { ComputersCanvas } from './canvas';
+import { FaCode } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -20,7 +20,19 @@ const Hero = () => {
         }
       >
         <div className="flex flex-col justify-center items-center mt-5 ">
-          <div className="w-5 h-5 rounded-full bg-[#915eff] "/>
+          <motion.div
+            animate={{
+              rotate: 390,
+            }}
+            transition={{
+              duration: 2,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="text-4xl text-violet-600"
+          >
+            <FaCode />
+          </motion.div>
 
           <div className="w-1 sm:h80 h-40 violet-gradient "/>
 
@@ -30,19 +42,18 @@ const Hero = () => {
           <h1 className={
             `${styles.heroHeadText}`
           }
-          >Hi, I'm <span className="text-violet-600"> Luiz Guilherme</span>
+          >Hi, I'm <span className="text-violet-600"> Luiz Guilherme Arlochi</span>
           </h1>
           <p className={
             `${styles.heroSubText}
             mt-2
-            text-white-100
+            text-white
             `
           }>
-            Full Stack Web Developer, JavaScript and Python enthusiast. 
+            Experienced Full Stack Web Developer with a strong passion for JavaScript and Python. I've recently expanded my skill set to include cloud computing, taking advantage of Google Cloud's Compute Engine and Cloud Storage to manage and optimize training models and large-scale 3D simulations. While I continue to work on some of web development projects, I'm also exploring innovative ways to combine my expertise in web technologies with the visualization of 3D models, with the aim of improving the way these models can be viewed and edited directly through web browsers and mobile devices.
           </p>
         </div>
       </div>
-      <ComputersCanvas />
 
       <div className="
         absolute

@@ -12,17 +12,12 @@ import {
     git,
     mysql,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     wallet,
-    jobit,
-    tripguide,
     threejs,
     ai,
     react,
-    python
+    python,
+    gaussian,
   } from "../assets";
   
   export const navLinks = [
@@ -158,6 +153,32 @@ import {
         },
       ],
       image: wallet,
+      source_code_link: "https://github.com/luizArlochi/Wallet-Currency-Converter",
+    },
+
+    {
+      name: "3D Gaussian Reconstruction",
+      description:
+        "Project under development to reconstruct, rasterize, smooth and visualize 3D objects from Gaussian point clouds. The project aims to improve visualization in a general context, from complex objects to terrain and buildings. It has fields of application in diverse areas, such as engineering, architecture, geography, among others.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CudaToolkit",
+          color: "green-text-gradient",
+        },
+        {
+          name: "PyTorch",
+          color: "red-text-gradient",
+        },
+        {
+          name: "Conda-Forge",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: gaussian,
       source_code_link: "https://github.com/luizArlochi/Wallet-Currency-Converter",
     },
     // {
